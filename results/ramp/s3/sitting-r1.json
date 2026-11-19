@@ -1,0 +1,107 @@
+{
+ "steps": [
+  {
+   "lane": "rs",
+   "n": 10,
+   "ok": true,
+   "outcome": "complete",
+   "secs": 12
+  },
+  {
+   "lane": "py",
+   "n": 10,
+   "ok": true,
+   "outcome": "complete",
+   "secs": 14
+  },
+  {
+   "lane": "ts",
+   "n": 10,
+   "ok": true,
+   "outcome": "complete",
+   "secs": 13
+  },
+  {
+   "lane": "rs",
+   "n": 25,
+   "ok": true,
+   "outcome": "complete",
+   "secs": 14
+  },
+  {
+   "lane": "py",
+   "n": 25,
+   "ok": true,
+   "outcome": "complete",
+   "secs": 19
+  },
+  {
+   "lane": "ts",
+   "n": 25,
+   "ok": true,
+   "outcome": "complete",
+   "secs": 16
+  },
+  {
+   "lane": "py",
+   "n": 50,
+   "ok": true,
+   "outcome": "complete",
+   "secs": 34
+  },
+  {
+   "lane": "ts",
+   "n": 50,
+   "ok": true,
+   "outcome": "complete",
+   "secs": 18
+  },
+  {
+   "lane": "rs",
+   "n": 50,
+   "ok": true,
+   "outcome": "complete",
+   "secs": 15
+  },
+  {
+   "lane": "ts",
+   "n": 100,
+   "ok": false,
+   "outcome": "stopped: swap grew over 2048 MB",
+   "secs": 14
+  },
+  {
+   "lane": "py",
+   "n": 100,
+   "ok": false,
+   "outcome": "stopped: swap grew over 2048 MB",
+   "secs": 113
+  },
+  {
+   "lane": "rs",
+   "n": 100,
+   "ok": true,
+   "outcome": "complete",
+   "secs": 16
+  },
+  {
+   "lane": "rs",
+   "n": 250,
+   "ok": true,
+   "outcome": "complete",
+   "secs": 19
+  },
+  {
+   "lane": "rs",
+   "n": 500,
+   "ok": false,
+   "outcome": "complete",
+   "secs": 22
+  }
+ ],
+ "wall": {
+  "ts": 100,
+  "py": 100,
+  "rs": 500
+ }
+}

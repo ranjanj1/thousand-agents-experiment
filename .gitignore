@@ -1,0 +1,6 @@
+sessions/private/
+builds/
+__pycache__/
+.DS_Store
+.venv/
+results/ramp/dry*/

@@ -1,0 +1,100 @@
+{
+ "id": "rs2-n500",
+ "sitting": "s1",
+ "lane": "rs",
+ "round": 2,
+ "n": 500,
+ "build": "<repo>/builds/rs-scale",
+ "build_what": "Round 2 scale build (SPEC-SCALE.md): one program runs every agent",
+ "api": "replay",
+ "speed": 1.0,
+ "concurrency": 500,
+ "started": "2026-11-19T11:51:48-0500",
+ "outcome": "complete",
+ "ok": true,
+ "agents": {
+  "finished_done": 500,
+  "hidden_pass": 500,
+  "visible_pass": 500,
+  "statuses": {
+   "done": 500
+  },
+  "spawn_errors": {},
+  "runs_file_matches_stdout": 500
+ },
+ "time": {
+  "launch_s": 0.005,
+  "batch_wall_s": 12.36,
+  "agent_wall_ms": {
+   "median": 8091.9625,
+   "p95": 12085.549,
+   "max": 12304.135
+  },
+  "outside_model_ms": {
+   "median": 255.52899999999954,
+   "p95": 648.7010000000009,
+   "max": 738.1320000000014
+  }
+ },
+ "model": {
+  "calls_logged_by_agents": 1834,
+  "llm_ms_total": 4158064.1,
+  "replay": {
+   "requests": 1834,
+   "agents": 500,
+   "in_flight": 0,
+   "max_in_flight": 500,
+   "problems": 0,
+   "served_delay_ms": 4140134.2,
+   "by_status": {
+    "200": 1834
+   },
+   "cpu_s": 1.289,
+   "max_rss_mb": 57.1,
+   "t_first": 1795107108.1475809,
+   "t_last": 1795107120.4318662
+  },
+  "extra_wait_per_call_ms": 9.78
+ },
+ "memory": {
+  "peak_footprint_mb": 230.3,
+  "peak_resident_mb": 308.8,
+  "per_agent_footprint_mb": 0.46,
+  "peak_processes": 9,
+  "swap_before_mb": 0.0,
+  "peak_swap_mb": 0.0,
+  "swap_growth_mb": 0.0,
+  "peak_compressed_mb": 1067.3,
+  "peak_pressure": 1,
+  "sampler": "libproc"
+ },
+ "cpu": {
+  "children_cpu_s": 76.71,
+  "peak_pct": 76.3,
+  "avg_pct": 620.5
+ },
+ "mac": {
+  "macos": "26.5.2",
+  "machine": "MacBookPro17,1",
+  "chip": "Apple M1",
+  "cores": 8,
+  "ram_gb": 8.0,
+  "power": "AC",
+  "kern.maxproc": 2000,
+  "kern.maxprocperuid": 1333,
+  "kern.maxfiles": 30720,
+  "kern.maxfilesperproc": 10240,
+  "kern.ipc.somaxconn": 4096,
+  "ulimit_nofile": [
+   1048576,
+   9223372036854775807
+  ],
+  "ulimit_nproc": [
+   1333,
+   2000
+  ],
+  "processes_mine": 360,
+  "pressure": 1
+ },
+ "batch_stderr_tail": ""
+}

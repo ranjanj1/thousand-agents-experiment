@@ -1,0 +1,100 @@
+{
+ "id": "ts2-n1000",
+ "sitting": "s3",
+ "lane": "ts",
+ "round": 2,
+ "n": 1000,
+ "build": "<repo>/builds/ts-scale",
+ "build_what": "Round 2 scale build (SPEC-SCALE.md): one program runs every agent",
+ "api": "replay",
+ "speed": 1.0,
+ "concurrency": 1000,
+ "started": "2026-11-19T12:39:47-0500",
+ "outcome": "complete",
+ "ok": true,
+ "agents": {
+  "finished_done": 1000,
+  "hidden_pass": 1000,
+  "visible_pass": 1000,
+  "statuses": {
+   "done": 1000
+  },
+  "spawn_errors": {},
+  "runs_file_matches_stdout": 1000
+ },
+ "time": {
+  "launch_s": 0.008,
+  "batch_wall_s": 15.35,
+  "agent_wall_ms": {
+   "median": 10006.3299375,
+   "p95": 14449.350292,
+   "max": 14944.071750000001
+  },
+  "outside_model_ms": {
+   "median": 2385.9183964999993,
+   "p95": 3395.3312920000008,
+   "max": 3551.4805829999987
+  }
+ },
+ "model": {
+  "calls_logged_by_agents": 3667,
+  "llm_ms_total": 8295937.7,
+  "replay": {
+   "requests": 3667,
+   "agents": 1000,
+   "in_flight": 0,
+   "max_in_flight": 1000,
+   "problems": 0,
+   "served_delay_ms": 8276903.5,
+   "by_status": {
+    "200": 3667
+   },
+   "cpu_s": 2.187,
+   "max_rss_mb": 87.3,
+   "t_first": 1795109988.072636,
+   "t_last": 1795110003.21522
+  },
+  "extra_wait_per_call_ms": 5.19
+ },
+ "memory": {
+  "peak_footprint_mb": 383.9,
+  "peak_resident_mb": 475.2,
+  "per_agent_footprint_mb": 0.38,
+  "peak_processes": 9,
+  "swap_before_mb": 0.0,
+  "peak_swap_mb": 0.0,
+  "swap_growth_mb": 0.0,
+  "peak_compressed_mb": 933.6,
+  "peak_pressure": 1,
+  "sampler": "libproc"
+ },
+ "cpu": {
+  "children_cpu_s": 162.92,
+  "peak_pct": 140.1,
+  "avg_pct": 1061.4
+ },
+ "mac": {
+  "macos": "26.5.2",
+  "machine": "MacBookPro17,1",
+  "chip": "Apple M1",
+  "cores": 8,
+  "ram_gb": 8.0,
+  "power": "AC",
+  "kern.maxproc": 2000,
+  "kern.maxprocperuid": 1333,
+  "kern.maxfiles": 30720,
+  "kern.maxfilesperproc": 10240,
+  "kern.ipc.somaxconn": 4096,
+  "ulimit_nofile": [
+   1048576,
+   9223372036854775807
+  ],
+  "ulimit_nproc": [
+   1333,
+   2000
+  ],
+  "processes_mine": 320,
+  "pressure": 1
+ },
+ "batch_stderr_tail": "tinycoder: batch finished: 1000 agents (done 1000, step_limit 0, error 0)\n"
+}

@@ -1,0 +1,104 @@
+{
+ "id": "rs1-n500",
+ "sitting": "s2",
+ "lane": "rs",
+ "round": 1,
+ "n": 500,
+ "build": "~/Documents/Projects/tinycoder-experiment/builds/rs-optimize",
+ "build_what": "Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes",
+ "api": "replay",
+ "speed": 1.0,
+ "concurrency": 500,
+ "started": "2026-11-14T17:49:29-0500",
+ "outcome": "complete",
+ "ok": false,
+ "agents": {
+  "finished_done": 356,
+  "hidden_pass": 356,
+  "visible_pass": 356,
+  "statuses": {
+   "done": 356,
+   "error": 9,
+   "spawn_failed": 135
+  },
+  "spawn_errors": {
+   "Resource temporarily unavailable (errno 35)": 135
+  },
+  "runs_file_matches_stdout": 365
+ },
+ "time": {
+  "launch_s": 1.023,
+  "batch_wall_s": 13.2,
+  "agent_wall_ms": {
+   "median": 7467.967,
+   "p95": 12007.629,
+   "max": 12199.888
+  },
+  "outside_model_ms": {
+   "median": 60.64549999999963,
+   "p95": 86.04500000000007,
+   "max": 106.38600000000042
+  }
+ },
+ "model": {
+  "calls_logged_by_agents": 1306,
+  "llm_ms_total": 2950770.0,
+  "replay": {
+   "requests": 1306,
+   "agents": 356,
+   "in_flight": 0,
+   "max_in_flight": 356,
+   "problems": 0,
+   "served_delay_ms": 2948728.0,
+   "by_status": {
+    "200": 1306
+   },
+   "cpu_s": 1.002,
+   "max_rss_mb": 47.1,
+   "t_first": 1794696569.1016052,
+   "t_last": 1794696582.216029
+  },
+  "extra_wait_per_call_ms": 1.56
+ },
+ "memory": {
+  "peak_footprint_mb": 2008.6,
+  "peak_resident_mb": 5784.5,
+  "per_agent_footprint_mb": 4.02,
+  "peak_processes": 1073,
+  "swap_before_mb": 795.25,
+  "peak_swap_mb": 795.25,
+  "swap_growth_mb": 0.0,
+  "peak_compressed_mb": 258.6,
+  "peak_pressure": 1,
+  "sampler": "libproc"
+ },
+ "cpu": {
+  "children_cpu_s": 54.75,
+  "peak_pct": 593.5,
+  "avg_pct": 414.8
+ },
+ "mac": {
+  "macos": "26.5.2",
+  "machine": "MacBookPro17,1",
+  "chip": "Apple M1",
+  "cores": 8,
+  "ram_gb": 8.0,
+  "power": "AC",
+  "kern.maxproc": 2000,
+  "kern.maxprocperuid": 1333,
+  "kern.maxfiles": 30720,
+  "kern.maxfilesperproc": 10240,
+  "kern.ipc.somaxconn": 4096,
+  "ulimit_nofile": [
+   1048576,
+   9223372036854775807
+  ],
+  "ulimit_nproc": [
+   1333,
+   2000
+  ],
+  "processes_mine": 267,
+  "pressure": 1
+ },
+ "batch_stderr_tail": null
+}

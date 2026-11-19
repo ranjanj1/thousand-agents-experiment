@@ -1,0 +1,5 @@
+OpenRouter credit before: $4.8057
+rs2-n10-live: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 10 agents, live model at speed 1.0. Swap 684.56 MB, pressure 1, 261 processes of mine.
+launched in 0.00 s; 0 spawn errors
+checking 8 finished workspaces (not timed)...
+rs2-n10-live: complete. 8/10 passed hidden tests. Batch 9.7 s; outside the model per agent median 54.12350000000106 ms, p95 69.88599999999951 ms. Peak memory 8 MB (0.8 MB per agent), 2 processes, swap +0 MB, pressure 1. {'done': 8, 'error': 2}

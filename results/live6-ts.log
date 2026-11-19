@@ -1,0 +1,6 @@
+OpenRouter credit before: $4.0138
+ts2-n6-live: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 6 agents, live model at speed 1.0. Swap 959.56 MB, pressure 1, 198 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 60.6 MB, 2 processes, swap 959.56 MB, pressure 1
+checking 6 finished workspaces (not timed)...
+ts2-n6-live: complete. 6/6 passed hidden tests. Batch 11.7 s; outside the model per agent median 65.28064450000056 ms, p95 72.09545899999921 ms. Peak memory 61 MB (10.1 MB per agent), 2 processes, swap +0 MB, pressure 1. {'done': 6}

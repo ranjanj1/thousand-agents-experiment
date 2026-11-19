@@ -1,0 +1,23 @@
+{
+ "snapshot": "snapshots/tss/optimize",
+ "build_s": {
+  "npm ci --offline": 2.14,
+  "npx tsc -p tsconfig.json": 1.09,
+  "node dist/build/bundle.js": 0.3,
+  "node dist/build/warm.js": 1.62
+ },
+ "gates": {
+  "audit": {
+   "ok": true,
+   "tail": "TS audit: OK (11 source files)"
+  },
+  "exp4_hidden": {
+   "ok": true,
+   "tail": "ent_step_limit             \nPASS agent_retries_overloaded     \nPASS h_symlink_escape             \nPASS h_git_variants               \nPASS h_non_utf8                   \nPASS h_truncation                 \nPASS h_read_variants              \nPASS h_shell_limits               \nPASS h_hooks                      \nPASS h_server_error_passthrough   \nPASS h_unknown_tool               \nPASS h_parallel_and_text          \nPASS h_stop_reasons_and_errors    \nPASS h_default_run_id             \nPASS h_replay_t1                  \nPASS h_replay_t2                  \nPASS h_replay_t3                  \n26/26 passed"
+  },
+  "scale_hidden": {
+   "ok": true,
+   "tail": "h_real_tasks_300             PASS  (21 s)\nh_queue_1000_at_100          PASS  (13 s)\nh_symlink_per_workspace      PASS  (1 s)\nh_step_limit_one_agent       PASS  (10 s)\nh_slow_tool_one_agent        PASS  (30 s)\nh_exp4_checks_still_pass     PASS  (48 s)\nALL PASS"
+  }
+ }
+}

@@ -1,0 +1,383 @@
+{
+ "source": "Experiment 4 agent runs (Sonnet 5.5 via OpenRouter, provider Anthropic)",
+ "runs": [
+  {
+   "id": "py-t1-bugfix-1",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 6663.5,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t1-bugfix-2",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 6744.8,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t1-bugfix-3",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 6855.1,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t1-bugfix-4",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 7398.0,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t1-bugfix-5",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 7081.5,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t2-feature-1",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 9702.0,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t2-feature-2",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 12126.1,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t2-feature-3",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 11974.0,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t2-feature-4",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 11229.3,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t2-feature-5",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 10074.7,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t3-failing-1",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 8020.9,
+   "tool_calls": 4,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t3-failing-2",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 6215.8,
+   "tool_calls": 4,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t3-failing-3",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 6378.8,
+   "tool_calls": 4,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t3-failing-4",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 7182.4,
+   "tool_calls": 4,
+   "retries_dropped": 0
+  },
+  {
+   "id": "py-t3-failing-5",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 6582.4,
+   "tool_calls": 4,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t1-bugfix-1",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 6625.8,
+   "tool_calls": 7,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t1-bugfix-2",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 6718.4,
+   "tool_calls": 7,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t1-bugfix-3",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 6746.3,
+   "tool_calls": 7,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t1-bugfix-4",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 7105.4,
+   "tool_calls": 7,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t1-bugfix-5",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 7080.5,
+   "tool_calls": 7,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t2-feature-1",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 9941.9,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t2-feature-2",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 11943.2,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t2-feature-3",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 9607.7,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t2-feature-4",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 10315.6,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t2-feature-5",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 10135.5,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t3-failing-1",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 6380.5,
+   "tool_calls": 4,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t3-failing-2",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 6801.9,
+   "tool_calls": 4,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t3-failing-3",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 6327.8,
+   "tool_calls": 5,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t3-failing-4",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 7116.5,
+   "tool_calls": 5,
+   "retries_dropped": 0
+  },
+  {
+   "id": "rs-t3-failing-5",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 6609.8,
+   "tool_calls": 4,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t1-bugfix-1",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 7370.8,
+   "tool_calls": 7,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t1-bugfix-2",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 8072.2,
+   "tool_calls": 7,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t1-bugfix-3",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 7246.8,
+   "tool_calls": 7,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t1-bugfix-4",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 7262.4,
+   "tool_calls": 7,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t1-bugfix-5",
+   "task": "t1-bugfix",
+   "steps": 4,
+   "delay_ms_total": 7124.1,
+   "tool_calls": 7,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t2-feature-1",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 9028.6,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t2-feature-2",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 9815.0,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t2-feature-3",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 9822.1,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t2-feature-4",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 10346.8,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t2-feature-5",
+   "task": "t2-feature",
+   "steps": 4,
+   "delay_ms_total": 9752.2,
+   "tool_calls": 6,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t3-failing-1",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 7902.8,
+   "tool_calls": 4,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t3-failing-2",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 8598.6,
+   "tool_calls": 5,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t3-failing-3",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 9157.0,
+   "tool_calls": 4,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t3-failing-4",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 8347.9,
+   "tool_calls": 4,
+   "retries_dropped": 0
+  },
+  {
+   "id": "ts-t3-failing-5",
+   "task": "t3-failing",
+   "steps": 3,
+   "delay_ms_total": 9085.6,
+   "tool_calls": 4,
+   "retries_dropped": 0
+  }
+ ],
+ "by_task": {
+  "t1-bugfix": {
+   "recordings": 15,
+   "steps_median": 4,
+   "delay_s_median": 7.08
+  },
+  "t2-feature": {
+   "recordings": 15,
+   "steps_median": 4,
+   "delay_s_median": 10.07
+  },
+  "t3-failing": {
+   "recordings": 15,
+   "steps_median": 3,
+   "delay_s_median": 7.12
+  }
+ },
+ "problems": []
+}

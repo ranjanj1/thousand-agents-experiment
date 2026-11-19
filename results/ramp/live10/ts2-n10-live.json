@@ -1,0 +1,97 @@
+{
+ "id": "ts2-n10-live",
+ "sitting": "live10",
+ "lane": "ts",
+ "round": 2,
+ "n": 10,
+ "build": "<repo>/builds/ts-scale",
+ "build_what": "Round 2 scale build (SPEC-SCALE.md): one program runs every agent",
+ "api": "live",
+ "speed": 1.0,
+ "concurrency": 10,
+ "started": "2026-11-19T13:29:25-0500",
+ "outcome": "complete",
+ "ok": false,
+ "agents": {
+  "finished_done": 8,
+  "hidden_pass": 8,
+  "visible_pass": 8,
+  "statuses": {
+   "done": 8,
+   "error": 2
+  },
+  "spawn_errors": {},
+  "runs_file_matches_stdout": 10
+ },
+ "time": {
+  "launch_s": 0.003,
+  "batch_wall_s": 16.94,
+  "agent_wall_ms": {
+   "median": 10081.769417,
+   "p95": 16651.794292,
+   "max": 16651.794292
+  },
+  "outside_model_ms": {
+   "median": 66.77772999999979,
+   "p95": 70.13662599999952,
+   "max": 70.13662599999952
+  }
+ },
+ "model": {
+  "calls_logged_by_agents": 31,
+  "llm_ms_total": 81465.1,
+  "replay": null,
+  "extra_wait_per_call_ms": null,
+  "live": {
+   "calls": 33,
+   "statuses": [
+    200,
+    402
+   ],
+   "cost_usd": 0.2121,
+   "model_ms_median": 1948.6,
+   "credit_after": 4.7291
+  }
+ },
+ "memory": {
+  "peak_footprint_mb": 62.4,
+  "peak_resident_mb": 99.4,
+  "per_agent_footprint_mb": 6.24,
+  "peak_processes": 2,
+  "swap_before_mb": 684.56,
+  "peak_swap_mb": 684.56,
+  "swap_growth_mb": 0.0,
+  "peak_compressed_mb": 1013.2,
+  "peak_pressure": 1,
+  "sampler": "libproc"
+ },
+ "cpu": {
+  "children_cpu_s": 2.76,
+  "peak_pct": 38.3,
+  "avg_pct": 16.3
+ },
+ "mac": {
+  "macos": "26.5.2",
+  "machine": "MacBookPro17,1",
+  "chip": "Apple M1",
+  "cores": 8,
+  "ram_gb": 8.0,
+  "power": "AC",
+  "kern.maxproc": 2000,
+  "kern.maxprocperuid": 1333,
+  "kern.maxfiles": 30720,
+  "kern.maxfilesperproc": 10240,
+  "kern.ipc.somaxconn": 4096,
+  "ulimit_nofile": [
+   1048576,
+   9223372036854775807
+  ],
+  "ulimit_nproc": [
+   1333,
+   2000
+  ],
+  "processes_mine": 256,
+  "pressure": 1
+ },
+ "batch_stderr_tail": "tinycoder: batch finished: 10 agents (done 8, step_limit 0, error 2)\n"
+}

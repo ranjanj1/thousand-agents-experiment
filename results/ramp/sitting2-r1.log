@@ -1,0 +1,117 @@
+start load { 7.84 21.88 12.15 }
+macos                  26.5.2
+machine                MacBookPro17,1
+chip                   Apple M1
+cores                  8
+ram_gb                 8.0
+power                  AC
+low_power_mode         False
+kern.maxproc           2000
+kern.maxprocperuid     1333
+kern.maxfiles          30720
+kern.maxfilesperproc   10240
+kern.ipc.somaxconn     4096
+kern.num_taskthreads   2048
+ulimit_nofile          [1048576, 9223372036854775807]
+ulimit_nproc           [1333, 2000]
+processes_all          571
+processes_mine         307
+swap_used_mb           0.0
+pressure               1
+uptime                 17:38  up 4 mins, 2 users, load averages: 7.84 21.88 12.15
+sampler_source         libproc
+frozen                 True
+refusals               []
+top processes by CPU: (removed before publishing)
+round 1 needs 3 processes per agent (+1 while it runs tests): about 342 agents fit under kern.maxprocperuid now
+READY
+rs1-n10: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 10 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 311 processes of mine.
+launched in 0.01 s; 0 spawn errors
+     10 s: 1 running, footprint 16.7 MB, 9 processes, swap 0.0 MB, pressure 1
+checking 10 finished workspaces (not timed)...
+rs1-n10: complete. 10/10 passed hidden tests. Batch 10.3 s; outside the model per agent median 114.46349999999984 ms, p95 173.22900000000027 ms. Peak memory 61 MB (6.1 MB per agent), 31 processes, swap +0 MB, pressure 1. {'done': 10}
+py1-n10: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 10 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 311 processes of mine.
+launched in 0.02 s; 0 spawn errors
+     10 s: 3 running, footprint 434.0 MB, 10 processes, swap 0.0 MB, pressure 1
+checking 10 finished workspaces (not timed)...
+py1-n10: complete. 10/10 passed hidden tests. Batch 12.2 s; outside the model per agent median 2103.2219999999998 ms, p95 2170.9440000000004 ms. Peak memory 1446 MB (144.6 MB per agent), 30 processes, swap +0 MB, pressure 1. {'done': 10}
+ts1-n10: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 10 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 311 processes of mine.
+launched in 0.02 s; 0 spawn errors
+     10 s: 3 running, footprint 333.2 MB, 9 processes, swap 0.0 MB, pressure 1
+checking 10 finished workspaces (not timed)...
+ts1-n10: complete. 10/10 passed hidden tests. Batch 11.4 s; outside the model per agent median 639.4593334999995 ms, p95 665.529458 ms. Peak memory 1026 MB (102.6 MB per agent), 30 processes, swap +0 MB, pressure 1. {'done': 10}
+py1-n25: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 25 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 316 processes of mine.
+launched in 0.15 s; 0 spawn errors
+     10 s: 25 running, footprint 3615.0 MB, 75 processes, swap 0.0 MB, pressure 1
+checking 25 finished workspaces (not timed)...
+py1-n25: complete. 25/25 passed hidden tests. Batch 17.3 s; outside the model per agent median 5080.591 ms, p95 5225.314 ms. Peak memory 3626 MB (145.0 MB per agent), 76 processes, swap +0 MB, pressure 1. {'done': 25}
+rs1-n25: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 25 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 317 processes of mine.
+launched in 0.07 s; 0 spawn errors
+     10 s: 3 running, footprint 39.2 MB, 21 processes, swap 0.0 MB, pressure 1
+checking 25 finished workspaces (not timed)...
+rs1-n25: complete. 25/25 passed hidden tests. Batch 12.1 s; outside the model per agent median 76.51400000000103 ms, p95 92.8159999999998 ms. Peak memory 149 MB (6.0 MB per agent), 76 processes, swap +0 MB, pressure 1. {'done': 25}
+ts1-n25: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 25 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 323 processes of mine.
+launched in 0.12 s; 0 spawn errors
+     10 s: 9 running, footprint 976.1 MB, 27 processes, swap 0.0 MB, pressure 1
+checking 25 finished workspaces (not timed)...
+ts1-n25: complete. 25/25 passed hidden tests. Batch 13.8 s; outside the model per agent median 1349.5718749999996 ms, p95 1455.993375 ms. Peak memory 2561 MB (102.4 MB per agent), 77 processes, swap +0 MB, pressure 1. {'done': 25}
+py1-n50: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 50 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 324 processes of mine.
+launched in 0.41 s; 0 spawn errors
+     10 s: 50 running, footprint 5187.6 MB, 150 processes, swap 0.0 MB, pressure 2
+     20 s: 50 running, footprint 7195.8 MB, 150 processes, swap 711.62 MB, pressure 2
+     30 s: 5 running, footprint 716.9 MB, 16 processes, swap 669.75 MB, pressure 1
+checking 50 finished workspaces (not timed)...
+py1-n50: complete. 50/50 passed hidden tests. Batch 31.9 s; outside the model per agent median 19219.056 ms, p95 19612.641 ms. Peak memory 7198 MB (144.0 MB per agent), 153 processes, swap +813 MB, pressure 2. {'done': 50}
+ts1-n50: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 50 agents, replay model at speed 1.0. Swap 637.75 MB, pressure 1, 326 processes of mine.
+launched in 0.27 s; 0 spawn errors
+     10 s: 44 running, footprint 4625.0 MB, 147 processes, swap 629.75 MB, pressure 2
+checking 50 finished workspaces (not timed)...
+ts1-n50: complete. 50/50 passed hidden tests. Batch 15.7 s; outside the model per agent median 2783.7164159999993 ms, p95 3032.5334159999993 ms. Peak memory 4854 MB (97.1 MB per agent), 151 processes, swap +0 MB, pressure 2. {'done': 50}
+rs1-n50: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 50 agents, replay model at speed 1.0. Swap 629.75 MB, pressure 1, 325 processes of mine.
+launched in 0.13 s; 0 spawn errors
+     10 s: 10 running, footprint 89.5 MB, 48 processes, swap 629.75 MB, pressure 1
+checking 50 finished workspaces (not timed)...
+rs1-n50: complete. 50/50 passed hidden tests. Batch 12.4 s; outside the model per agent median 57.821500000000015 ms, p95 88.05599999999959 ms. Peak memory 285 MB (5.7 MB per agent), 151 processes, swap +0 MB, pressure 1. {'done': 50}
+py1-n100: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 100 agents, replay model at speed 1.0. Swap 621.75 MB, pressure 1, 325 processes of mine.
+launched in 1.41 s; 0 spawn errors
+     10 s: 100 running, footprint 6250.9 MB, 236 processes, swap 621.75 MB, pressure 2
+     21 s: 100 running, footprint 7617.1 MB, 268 processes, swap 976.06 MB, pressure 2
+     32 s: 100 running, footprint 8267.6 MB, 287 processes, swap 1377.88 MB, pressure 2
+     42 s: 100 running, footprint 8811.0 MB, 295 processes, swap 1488.31 MB, pressure 2
+     52 s: 100 running, footprint 9195.3 MB, 298 processes, swap 1643.94 MB, pressure 2
+     62 s: 100 running, footprint 9504.0 MB, 300 processes, swap 1807.5 MB, pressure 2
+     73 s: 100 running, footprint 9809.3 MB, 300 processes, swap 1873.12 MB, pressure 2
+     83 s: 100 running, footprint 10066.1 MB, 300 processes, swap 1923.62 MB, pressure 2
+     95 s: 100 running, footprint 10244.7 MB, 300 processes, swap 2048.81 MB, pressure 2
+    105 s: 100 running, footprint 10556.7 MB, 300 processes, swap 2134.5 MB, pressure 2
+    115 s: 100 running, footprint 10781.7 MB, 300 processes, swap 2240.62 MB, pressure 2
+    125 s: 100 running, footprint 11042.5 MB, 300 processes, swap 2352.69 MB, pressure 2
+    135 s: 100 running, footprint 11379.8 MB, 300 processes, swap 2469.56 MB, pressure 2
+stopped: swap grew over 2048 MB
+checking 0 finished workspaces (not timed)...
+py1-n100: stopped: swap grew over 2048 MB. 0/100 passed hidden tests. Batch 145.1 s; outside the model per agent median None ms, p95 None ms. Peak memory 11984 MB (119.8 MB per agent), 301 processes, swap +2234 MB, pressure 2. {'killed': 100}
+== py stops climbing at 100 agents: stopped: swap grew over 2048 MB
+rs1-n100: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 100 agents, replay model at speed 1.0. Swap 741.44 MB, pressure 1, 269 processes of mine.
+launched in 0.27 s; 0 spawn errors
+     10 s: 21 running, footprint 173.2 MB, 93 processes, swap 677.44 MB, pressure 1
+checking 100 finished workspaces (not timed)...
+rs1-n100: complete. 100/100 passed hidden tests. Batch 12.4 s; outside the model per agent median 53.153999999999996 ms, p95 76.50500000000102 ms. Peak memory 558 MB (5.6 MB per agent), 302 processes, swap +0 MB, pressure 1. {'done': 100}
+ts1-n100: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 100 agents, replay model at speed 1.0. Swap 637.44 MB, pressure 1, 273 processes of mine.
+launched in 1.55 s; 0 spawn errors
+     10 s: 100 running, footprint 8723.5 MB, 300 processes, swap 2681.19 MB, pressure 2
+stopped: swap grew over 2048 MB
+checking 0 finished workspaces (not timed)...
+ts1-n100: stopped: swap grew over 2048 MB. 0/100 passed hidden tests. Batch 10.4 s; outside the model per agent median None ms, p95 None ms. Peak memory 9056 MB (90.6 MB per agent), 307 processes, swap +2241 MB, pressure 2. {'killed': 100}
+== ts stops climbing at 100 agents: stopped: swap grew over 2048 MB
+rs1-n250: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 250 agents, replay model at speed 1.0. Swap 883.25 MB, pressure 1, 268 processes of mine.
+launched in 0.67 s; 0 spawn errors
+     10 s: 63 running, footprint 457.7 MB, 249 processes, swap 851.25 MB, pressure 1
+checking 250 finished workspaces (not timed)...
+rs1-n250: complete. 250/250 passed hidden tests. Batch 12.8 s; outside the model per agent median 55.49499999999989 ms, p95 70.20300000000043 ms. Peak memory 1418 MB (5.7 MB per agent), 758 processes, swap +0 MB, pressure 1. {'done': 250}
+rs1-n500: Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes, 500 agents, replay model at speed 1.0. Swap 795.25 MB, pressure 1, 267 processes of mine.
+launched in 1.02 s; 135 spawn errors
+     10 s: 98 running, footprint 690.9 MB, 374 processes, swap 787.25 MB, pressure 1
+checking 356 finished workspaces (not timed)...
+rs1-n500: complete. 356/500 passed hidden tests. Batch 13.2 s; outside the model per agent median 60.64549999999963 ms, p95 86.04500000000007 ms. Peak memory 2009 MB (4.0 MB per agent), 1073 processes, swap +0 MB, pressure 1. {'done': 356, 'error': 9, 'spawn_failed': 135}
+== rs stops climbing at 500 agents: complete
+SITTING s2 ROUND 1 FINISHED Sat Nov 14 17:49:50 2026; walls: {'py': 100, 'ts': 100, 'rs': 500}

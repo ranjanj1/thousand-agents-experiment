@@ -1,0 +1,7 @@
+OpenRouter credit before: $6.1643
+py2-n50-live: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 50 agents, live model at speed 1.0. Swap 708.56 MB, pressure 1, 250 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 78.8 MB, 2 processes, swap 708.56 MB, pressure 1
+     20 s: 1 running, footprint 78.9 MB, 2 processes, swap 708.56 MB, pressure 1
+checking 33 finished workspaces (not timed)...
+py2-n50-live: complete. 33/50 passed hidden tests. Batch 21.4 s; outside the model per agent median 67.90799999999945 ms, p95 91.88200000000143 ms. Peak memory 79 MB (1.6 MB per agent), 2 processes, swap +0 MB, pressure 1. {'done': 33, 'error': 17}

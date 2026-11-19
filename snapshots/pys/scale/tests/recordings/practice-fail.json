@@ -1,0 +1,84 @@
+{
+ "source": "practice-fail-scripted",
+ "task": "practice-fail",
+ "task_text": "mul() in calc.py returns the wrong result. Fix it so the tests pass.\n",
+ "note": "Scripted for the visible checks (not a real model run). Delays are typical Sonnet 5.5 step times from Experiment 4.",
+ "steps": [
+  {
+   "delay_ms": 1500,
+   "stop_reason": "tool_use",
+   "content": [
+    {
+     "type": "tool_use",
+     "id": "x",
+     "name": "read_file",
+     "input": {
+      "path": "calc.py"
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 1700,
+    "output_tokens": 60,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  },
+  {
+   "delay_ms": 1800,
+   "stop_reason": "tool_use",
+   "content": [
+    {
+     "type": "tool_use",
+     "id": "x",
+     "name": "edit_file",
+     "input": {
+      "path": "calc.py",
+      "old_text": "def mul(a, b):\n    return a + b",
+      "new_text": "def mul(a, b):\n    return a * b"
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 1700,
+    "output_tokens": 120,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  },
+  {
+   "delay_ms": 1200,
+   "stop_reason": "tool_use",
+   "content": [
+    {
+     "type": "tool_use",
+     "id": "x",
+     "name": "run_tests",
+     "input": {}
+    }
+   ],
+   "usage": {
+    "input_tokens": 1700,
+    "output_tokens": 40,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  },
+  {
+   "delay_ms": 900,
+   "stop_reason": "end_turn",
+   "content": [
+    {
+     "type": "text",
+     "text": "mul() in calc.py added instead of multiplying. It now returns a * b and the tests pass."
+    }
+   ],
+   "usage": {
+    "input_tokens": 1700,
+    "output_tokens": 30,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  }
+ ]
+}

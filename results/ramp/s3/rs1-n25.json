@@ -1,0 +1,100 @@
+{
+ "id": "rs1-n25",
+ "sitting": "s3",
+ "lane": "rs",
+ "round": 1,
+ "n": 25,
+ "build": "~/Documents/Projects/tinycoder-experiment/builds/rs-optimize",
+ "build_what": "Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes",
+ "api": "replay",
+ "speed": 1.0,
+ "concurrency": 25,
+ "started": "2026-11-14T17:58:34-0500",
+ "outcome": "complete",
+ "ok": true,
+ "agents": {
+  "finished_done": 25,
+  "hidden_pass": 25,
+  "visible_pass": 25,
+  "statuses": {
+   "done": 25
+  },
+  "spawn_errors": {},
+  "runs_file_matches_stdout": 25
+ },
+ "time": {
+  "launch_s": 0.065,
+  "batch_wall_s": 12.11,
+  "agent_wall_ms": {
+   "median": 7331.339,
+   "p95": 10219.397,
+   "max": 12081.36
+  },
+  "outside_model_ms": {
+   "median": 73.98699999999917,
+   "p95": 97.38999999999942,
+   "max": 99.91100000000006
+  }
+ },
+ "model": {
+  "calls_logged_by_agents": 92,
+  "llm_ms_total": 201997.1,
+  "replay": {
+   "requests": 92,
+   "agents": 25,
+   "in_flight": 0,
+   "max_in_flight": 25,
+   "problems": 0,
+   "served_delay_ms": 201769.3,
+   "by_status": {
+    "200": 92
+   },
+   "cpu_s": 0.327,
+   "max_rss_mb": 28.8,
+   "t_first": 1794697114.6623738,
+   "t_last": 1794697126.722003
+  },
+  "extra_wait_per_call_ms": 2.48
+ },
+ "memory": {
+  "peak_footprint_mb": 149.6,
+  "peak_resident_mb": 420.9,
+  "per_agent_footprint_mb": 5.98,
+  "peak_processes": 76,
+  "swap_before_mb": 0.0,
+  "peak_swap_mb": 0.0,
+  "swap_growth_mb": 0.0,
+  "peak_compressed_mb": 858.8,
+  "peak_pressure": 1,
+  "sampler": "libproc"
+ },
+ "cpu": {
+  "children_cpu_s": 4.64,
+  "peak_pct": 76.7,
+  "avg_pct": 38.3
+ },
+ "mac": {
+  "macos": "26.5.2",
+  "machine": "MacBookPro17,1",
+  "chip": "Apple M1",
+  "cores": 8,
+  "ram_gb": 8.0,
+  "power": "AC",
+  "kern.maxproc": 2000,
+  "kern.maxprocperuid": 1333,
+  "kern.maxfiles": 30720,
+  "kern.maxfilesperproc": 10240,
+  "kern.ipc.somaxconn": 4096,
+  "ulimit_nofile": [
+   1048576,
+   9223372036854775807
+  ],
+  "ulimit_nproc": [
+   1333,
+   2000
+  ],
+  "processes_mine": 301,
+  "pressure": 1
+ },
+ "batch_stderr_tail": null
+}

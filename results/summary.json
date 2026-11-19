@@ -1,0 +1,864 @@
+{
+ "note": "Every number is a median across sittings of the step records in results/ramp/. Replay model unless api=live.",
+ "steps": {
+  "round1": {
+   "py": {
+    "10": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      10,
+      10,
+      10
+     ],
+     "batch_wall_s": 12.19,
+     "outside_model_ms_median": 2081.29,
+     "outside_model_ms_p95": 2165.02,
+     "extra_wait_per_call_ms": 5.69,
+     "peak_footprint_mb": 1446.9,
+     "per_agent_footprint_mb": 144.69,
+     "peak_processes": 30,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 144.3,
+     "spawn_errors": []
+    },
+    "25": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      25,
+      25,
+      25
+     ],
+     "batch_wall_s": 17.3,
+     "outside_model_ms_median": 5080.59,
+     "outside_model_ms_p95": 5225.31,
+     "extra_wait_per_call_ms": 6.81,
+     "peak_footprint_mb": 3630.2,
+     "per_agent_footprint_mb": 145.21,
+     "peak_processes": 76,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 251.3,
+     "spawn_errors": []
+    },
+    "50": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      50,
+      50,
+      50
+     ],
+     "batch_wall_s": 31.89,
+     "outside_model_ms_median": 19219.06,
+     "outside_model_ms_p95": 19612.64,
+     "extra_wait_per_call_ms": 36.37,
+     "peak_footprint_mb": 7198.0,
+     "per_agent_footprint_mb": 143.96,
+     "peak_processes": 153,
+     "swap_growth_mb": 813.3,
+     "peak_pressure": 2,
+     "cpu_avg_pct": 414.8,
+     "spawn_errors": []
+    },
+    "100": {
+     "sittings": 3,
+     "passed": 0,
+     "outcomes": [
+      "stopped: swap grew over 2048 MB"
+     ],
+     "hidden_pass": [
+      0,
+      0,
+      0
+     ],
+     "batch_wall_s": 137.16,
+     "outside_model_ms_median": null,
+     "outside_model_ms_p95": null,
+     "extra_wait_per_call_ms": -1486.8,
+     "peak_footprint_mb": 12382.2,
+     "per_agent_footprint_mb": 123.82,
+     "peak_processes": 301,
+     "swap_growth_mb": 2234.4,
+     "peak_pressure": 4,
+     "cpu_avg_pct": 170.4,
+     "spawn_errors": []
+    }
+   },
+   "rs": {
+    "10": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      10,
+      10,
+      10
+     ],
+     "batch_wall_s": 10.22,
+     "outside_model_ms_median": 106.79,
+     "outside_model_ms_p95": 160.45,
+     "extra_wait_per_call_ms": 3.1,
+     "peak_footprint_mb": 62.7,
+     "per_agent_footprint_mb": 6.27,
+     "peak_processes": 31,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 22.5,
+     "spawn_errors": []
+    },
+    "25": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      25,
+      25,
+      25
+     ],
+     "batch_wall_s": 12.13,
+     "outside_model_ms_median": 76.03,
+     "outside_model_ms_p95": 96.33,
+     "extra_wait_per_call_ms": 2.48,
+     "peak_footprint_mb": 149.1,
+     "per_agent_footprint_mb": 5.96,
+     "peak_processes": 76,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 38.2,
+     "spawn_errors": []
+    },
+    "50": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      50,
+      50,
+      50
+     ],
+     "batch_wall_s": 12.37,
+     "outside_model_ms_median": 57.82,
+     "outside_model_ms_p95": 87.52,
+     "extra_wait_per_call_ms": 2.93,
+     "peak_footprint_mb": 285.2,
+     "per_agent_footprint_mb": 5.7,
+     "peak_processes": 151,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 66.5,
+     "spawn_errors": []
+    },
+    "100": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      100,
+      100,
+      100
+     ],
+     "batch_wall_s": 12.45,
+     "outside_model_ms_median": 53.15,
+     "outside_model_ms_p95": 76.51,
+     "extra_wait_per_call_ms": 2.46,
+     "peak_footprint_mb": 561.1,
+     "per_agent_footprint_mb": 5.61,
+     "peak_processes": 302,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 122.6,
+     "spawn_errors": []
+    },
+    "250": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      250,
+      250,
+      250
+     ],
+     "batch_wall_s": 12.79,
+     "outside_model_ms_median": 55.39,
+     "outside_model_ms_p95": 70.2,
+     "extra_wait_per_call_ms": 1.75,
+     "peak_footprint_mb": 1417.6,
+     "per_agent_footprint_mb": 5.67,
+     "peak_processes": 756,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 295.9,
+     "spawn_errors": []
+    },
+    "500": {
+     "sittings": 3,
+     "passed": 0,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      348,
+      356,
+      358
+     ],
+     "batch_wall_s": 13.21,
+     "outside_model_ms_median": 56.53,
+     "outside_model_ms_p95": 69.41,
+     "extra_wait_per_call_ms": 1.56,
+     "peak_footprint_mb": 2008.4,
+     "per_agent_footprint_mb": 4.02,
+     "peak_processes": 1073,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 394.9,
+     "spawn_errors": [
+      {
+       "Resource temporarily unavailable (errno 35)": 147
+      },
+      {
+       "Resource temporarily unavailable (errno 35)": 135
+      },
+      {
+       "Resource temporarily unavailable (errno 35)": 136
+      }
+     ]
+    }
+   },
+   "ts": {
+    "10": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      10,
+      10,
+      10
+     ],
+     "batch_wall_s": 11.47,
+     "outside_model_ms_median": 639.46,
+     "outside_model_ms_p95": 665.53,
+     "extra_wait_per_call_ms": 9.61,
+     "peak_footprint_mb": 1029.0,
+     "per_agent_footprint_mb": 102.9,
+     "peak_processes": 30,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 70.1,
+     "spawn_errors": []
+    },
+    "25": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      25,
+      25,
+      25
+     ],
+     "batch_wall_s": 13.71,
+     "outside_model_ms_median": 1254.68,
+     "outside_model_ms_p95": 1455.99,
+     "extra_wait_per_call_ms": 11.0,
+     "peak_footprint_mb": 2569.1,
+     "per_agent_footprint_mb": 102.76,
+     "peak_processes": 77,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 136.7,
+     "spawn_errors": []
+    },
+    "50": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      50,
+      50,
+      50
+     ],
+     "batch_wall_s": 15.71,
+     "outside_model_ms_median": 2718.22,
+     "outside_model_ms_p95": 3032.53,
+     "extra_wait_per_call_ms": 22.64,
+     "peak_footprint_mb": 4847.3,
+     "per_agent_footprint_mb": 96.95,
+     "peak_processes": 151,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 2,
+     "cpu_avg_pct": 238.8,
+     "spawn_errors": []
+    },
+    "100": {
+     "sittings": 3,
+     "passed": 0,
+     "outcomes": [
+      "stopped: swap grew over 2048 MB"
+     ],
+     "hidden_pass": [
+      0,
+      0,
+      0
+     ],
+     "batch_wall_s": 10.36,
+     "outside_model_ms_median": null,
+     "outside_model_ms_p95": null,
+     "extra_wait_per_call_ms": -4628.67,
+     "peak_footprint_mb": 8931.3,
+     "per_agent_footprint_mb": 89.31,
+     "peak_processes": 302,
+     "swap_growth_mb": 2242.1,
+     "peak_pressure": 2,
+     "cpu_avg_pct": 313.1,
+     "spawn_errors": []
+    }
+   }
+  },
+  "round2": {
+   "py": {
+    "10": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      10,
+      10,
+      10
+     ],
+     "batch_wall_s": 11.05,
+     "outside_model_ms_median": 75.52,
+     "outside_model_ms_p95": 92.32,
+     "extra_wait_per_call_ms": 6.21,
+     "peak_footprint_mb": 79.6,
+     "per_agent_footprint_mb": 7.96,
+     "peak_processes": 2,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 26.2,
+     "spawn_errors": []
+    },
+    "25": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      25,
+      25,
+      25
+     ],
+     "batch_wall_s": 12.8,
+     "outside_model_ms_median": 74.15,
+     "outside_model_ms_p95": 97.33,
+     "extra_wait_per_call_ms": 8.26,
+     "peak_footprint_mb": 84.4,
+     "per_agent_footprint_mb": 3.38,
+     "peak_processes": 2,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 41.4,
+     "spawn_errors": []
+    },
+    "50": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      50,
+      50,
+      50
+     ],
+     "batch_wall_s": 12.91,
+     "outside_model_ms_median": 70.19,
+     "outside_model_ms_p95": 110.62,
+     "extra_wait_per_call_ms": 10.34,
+     "peak_footprint_mb": 87.8,
+     "per_agent_footprint_mb": 1.76,
+     "peak_processes": 3,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 66.5,
+     "spawn_errors": []
+    },
+    "100": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      100,
+      100,
+      100
+     ],
+     "batch_wall_s": 13.13,
+     "outside_model_ms_median": 96.17,
+     "outside_model_ms_p95": 134.46,
+     "extra_wait_per_call_ms": 15.24,
+     "peak_footprint_mb": 113.5,
+     "per_agent_footprint_mb": 1.14,
+     "peak_processes": 5,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 122.4,
+     "spawn_errors": []
+    },
+    "250": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      250,
+      250,
+      250
+     ],
+     "batch_wall_s": 13.16,
+     "outside_model_ms_median": 199.94,
+     "outside_model_ms_p95": 240.97,
+     "extra_wait_per_call_ms": 37.8,
+     "peak_footprint_mb": 171.0,
+     "per_agent_footprint_mb": 0.68,
+     "peak_processes": 9,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 296.2,
+     "spawn_errors": []
+    },
+    "500": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      500,
+      500,
+      500
+     ],
+     "batch_wall_s": 13.57,
+     "outside_model_ms_median": 595.88,
+     "outside_model_ms_p95": 1132.77,
+     "extra_wait_per_call_ms": 69.0,
+     "peak_footprint_mb": 227.3,
+     "per_agent_footprint_mb": 0.45,
+     "peak_processes": 9,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 568.1,
+     "spawn_errors": []
+    },
+    "1000": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      1000,
+      1000,
+      1000
+     ],
+     "batch_wall_s": 17.2,
+     "outside_model_ms_median": 3252.72,
+     "outside_model_ms_p95": 4247.41,
+     "extra_wait_per_call_ms": 153.34,
+     "peak_footprint_mb": 317.0,
+     "per_agent_footprint_mb": 0.32,
+     "peak_processes": 9,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 853.8,
+     "spawn_errors": []
+    }
+   },
+   "rs": {
+    "10": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      10,
+      10,
+      10
+     ],
+     "batch_wall_s": 10.26,
+     "outside_model_ms_median": 75.52,
+     "outside_model_ms_p95": 89.95,
+     "extra_wait_per_call_ms": 2.76,
+     "peak_footprint_mb": 17.1,
+     "per_agent_footprint_mb": 1.71,
+     "peak_processes": 2,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 21.0,
+     "spawn_errors": []
+    },
+    "25": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      25,
+      25,
+      25
+     ],
+     "batch_wall_s": 12.18,
+     "outside_model_ms_median": 58.23,
+     "outside_model_ms_p95": 83.46,
+     "extra_wait_per_call_ms": 2.83,
+     "peak_footprint_mb": 19.9,
+     "per_agent_footprint_mb": 0.8,
+     "peak_processes": 2,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 36.1,
+     "spawn_errors": []
+    },
+    "50": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      50,
+      50,
+      50
+     ],
+     "batch_wall_s": 12.29,
+     "outside_model_ms_median": 40.64,
+     "outside_model_ms_p95": 84.64,
+     "extra_wait_per_call_ms": 2.92,
+     "peak_footprint_mb": 29.8,
+     "per_agent_footprint_mb": 0.6,
+     "peak_processes": 2,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 62.7,
+     "spawn_errors": []
+    },
+    "100": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      100,
+      100,
+      100
+     ],
+     "batch_wall_s": 12.28,
+     "outside_model_ms_median": 47.51,
+     "outside_model_ms_p95": 89.73,
+     "extra_wait_per_call_ms": 3.96,
+     "peak_footprint_mb": 50.6,
+     "per_agent_footprint_mb": 0.51,
+     "peak_processes": 3,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 121.9,
+     "spawn_errors": []
+    },
+    "250": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      250,
+      250,
+      250
+     ],
+     "batch_wall_s": 12.35,
+     "outside_model_ms_median": 77.9,
+     "outside_model_ms_p95": 119.68,
+     "extra_wait_per_call_ms": 6.07,
+     "peak_footprint_mb": 133.4,
+     "per_agent_footprint_mb": 0.53,
+     "peak_processes": 9,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 305.8,
+     "spawn_errors": []
+    },
+    "500": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      500,
+      500,
+      500
+     ],
+     "batch_wall_s": 12.36,
+     "outside_model_ms_median": 253.34,
+     "outside_model_ms_p95": 658.06,
+     "extra_wait_per_call_ms": 9.78,
+     "peak_footprint_mb": 230.3,
+     "per_agent_footprint_mb": 0.46,
+     "peak_processes": 9,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 607.7,
+     "spawn_errors": []
+    },
+    "1000": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      1000,
+      1000,
+      1000
+     ],
+     "batch_wall_s": 14.54,
+     "outside_model_ms_median": 2036.66,
+     "outside_model_ms_p95": 2945.58,
+     "extra_wait_per_call_ms": 19.06,
+     "peak_footprint_mb": 391.1,
+     "per_agent_footprint_mb": 0.39,
+     "peak_processes": 9,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 995.1,
+     "spawn_errors": []
+    }
+   },
+   "ts": {
+    "10": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      10,
+      10,
+      10
+     ],
+     "batch_wall_s": 11.24,
+     "outside_model_ms_median": 63.36,
+     "outside_model_ms_p95": 85.69,
+     "extra_wait_per_call_ms": 5.82,
+     "peak_footprint_mb": 62.0,
+     "per_agent_footprint_mb": 6.2,
+     "peak_processes": 1,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 24.6,
+     "spawn_errors": []
+    },
+    "25": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      25,
+      25,
+      25
+     ],
+     "batch_wall_s": 12.3,
+     "outside_model_ms_median": 57.19,
+     "outside_model_ms_p95": 80.83,
+     "extra_wait_per_call_ms": 4.78,
+     "peak_footprint_mb": 69.7,
+     "per_agent_footprint_mb": 2.79,
+     "peak_processes": 2,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 40.1,
+     "spawn_errors": []
+    },
+    "50": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      50,
+      50,
+      50
+     ],
+     "batch_wall_s": 12.58,
+     "outside_model_ms_median": 40.87,
+     "outside_model_ms_p95": 81.55,
+     "extra_wait_per_call_ms": 4.15,
+     "peak_footprint_mb": 78.2,
+     "per_agent_footprint_mb": 1.56,
+     "peak_processes": 2,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 68.1,
+     "spawn_errors": []
+    },
+    "100": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      100,
+      100,
+      100
+     ],
+     "batch_wall_s": 12.59,
+     "outside_model_ms_median": 39.31,
+     "outside_model_ms_p95": 77.42,
+     "extra_wait_per_call_ms": 4.18,
+     "peak_footprint_mb": 92.2,
+     "per_agent_footprint_mb": 0.92,
+     "peak_processes": 3,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 122.8,
+     "spawn_errors": []
+    },
+    "250": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      250,
+      250,
+      250
+     ],
+     "batch_wall_s": 12.71,
+     "outside_model_ms_median": 50.93,
+     "outside_model_ms_p95": 89.25,
+     "extra_wait_per_call_ms": 3.72,
+     "peak_footprint_mb": 163.4,
+     "per_agent_footprint_mb": 0.65,
+     "peak_processes": 9,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 299.0,
+     "spawn_errors": []
+    },
+    "500": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      500,
+      500,
+      500
+     ],
+     "batch_wall_s": 12.71,
+     "outside_model_ms_median": 198.27,
+     "outside_model_ms_p95": 643.17,
+     "extra_wait_per_call_ms": 4.07,
+     "peak_footprint_mb": 231.0,
+     "per_agent_footprint_mb": 0.46,
+     "peak_processes": 9,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 593.2,
+     "spawn_errors": []
+    },
+    "1000": {
+     "sittings": 3,
+     "passed": 3,
+     "outcomes": [
+      "complete"
+     ],
+     "hidden_pass": [
+      1000,
+      1000,
+      1000
+     ],
+     "batch_wall_s": 15.13,
+     "outside_model_ms_median": 2110.64,
+     "outside_model_ms_p95": 3022.07,
+     "extra_wait_per_call_ms": 5.19,
+     "peak_footprint_mb": 383.9,
+     "per_agent_footprint_mb": 0.38,
+     "peak_processes": 9,
+     "swap_growth_mb": 0.0,
+     "peak_pressure": 1,
+     "cpu_avg_pct": 978.3,
+     "spawn_errors": []
+    }
+   }
+  }
+ },
+ "walls": {
+  "round1": {
+   "py": {
+    "agents": 100,
+    "how": [
+     "stopped: swap grew over 2048 MB"
+    ]
+   },
+   "rs": {
+    "agents": 500,
+    "how": [
+     "complete"
+    ]
+   },
+   "ts": {
+    "agents": 100,
+    "how": [
+     "stopped: swap grew over 2048 MB"
+    ]
+   }
+  },
+  "round2": {
+   "py": null,
+   "rs": null,
+   "ts": null
+  }
+ },
+ "live": []
+}

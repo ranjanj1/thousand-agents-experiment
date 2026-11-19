@@ -1,0 +1,128 @@
+{
+ "source": "py-t1-bugfix-2",
+ "lane_recorded": "py",
+ "task": "t1-bugfix",
+ "task_text": "A user reports that `top_words` in `textstats.py` returns words with the same count in a random-looking order.\nWords with equal counts must be ordered alphabetically, for example `top_words(\"pear apple pear apple fig\", 3)`\nmust return `[(\"apple\", 2), (\"pear\", 2), (\"fig\", 1)]`. Fix the bug and add a test for it. Keep the existing tests passing.\n",
+ "steps": [
+  {
+   "delay_ms": 1521.4,
+   "stop_reason": "tool_use",
+   "content": [
+    {
+     "type": "tool_use",
+     "id": "toolu_01AXVn99BterjsBn3QGR9EyZ",
+     "caller": {
+      "type": "direct"
+     },
+     "name": "read_file",
+     "input": {
+      "path": "textstats.py"
+     }
+    },
+    {
+     "type": "tool_use",
+     "id": "toolu_01Gdsvrjk3Bhu4DhBWKZSWTC",
+     "caller": {
+      "type": "direct"
+     },
+     "name": "list_files",
+     "input": {}
+    }
+   ],
+   "usage": {
+    "input_tokens": 1702,
+    "output_tokens": 74,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  },
+  {
+   "delay_ms": 1621.7,
+   "stop_reason": "tool_use",
+   "content": [
+    {
+     "type": "tool_use",
+     "id": "toolu_01U3Kh4p9YB91wB94Lse6GNN",
+     "caller": {
+      "type": "direct"
+     },
+     "name": "edit_file",
+     "input": {
+      "path": "textstats.py",
+      "old_text": "key=lambda kv: kv[1], reverse=True)",
+      "new_text": "key=lambda kv: (-kv[1], kv[0]))"
+     }
+    },
+    {
+     "type": "tool_use",
+     "id": "toolu_01XgAoqN4NSjNo6VxgkJxgsm",
+     "caller": {
+      "type": "direct"
+     },
+     "name": "read_file",
+     "input": {
+      "path": "test_textstats.py"
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 2176,
+    "output_tokens": 186,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  },
+  {
+   "delay_ms": 1733.2,
+   "stop_reason": "tool_use",
+   "content": [
+    {
+     "type": "tool_use",
+     "id": "toolu_01Pjz31NBDD3QyjS1tx8d79z",
+     "caller": {
+      "type": "direct"
+     },
+     "name": "edit_file",
+     "input": {
+      "path": "test_textstats.py",
+      "old_text": "\n\nif __name__",
+      "new_text": "\n    def test_top_ties_alphabetical(self):\n        self.assertEqual(\n            top_words(\"pear apple pear apple fig\", 3),\n            [(\"apple\", 2), (\"pear\", 2), (\"fig\", 1)],\n        )\n\n\nif __name__"
+     }
+    },
+    {
+     "type": "tool_use",
+     "id": "toolu_01MzyBieq7hQc4KLBUGwVrp3",
+     "caller": {
+      "type": "direct"
+     },
+     "name": "run_tests",
+     "input": {}
+    }
+   ],
+   "usage": {
+    "input_tokens": 2692,
+    "output_tokens": 210,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  },
+  {
+   "delay_ms": 1868.5,
+   "stop_reason": "end_turn",
+   "content": [
+    {
+     "type": "text",
+     "text": "`top_words` now breaks ties alphabetically, and the tests pass (4 ran, including the new one).\n\n- **Fix:** in `textstats.py`, the sort key is now `(-count, word)` instead of count with `reverse=True`. Higher counts still come first, and words with equal counts sort A to Z.\n- **Test:** I added `test_top_ties_alphabetical` to `test_textstats.py`. It uses your example, `top_words(\"pear apple pear apple fig\", 3)`, and expects `[(\"apple\", 2), (\"pear\", 2), (\"fig\", 1)]`.",
+     "citations": []
+    }
+   ],
+   "usage": {
+    "input_tokens": 3035,
+    "output_tokens": 195,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  }
+ ],
+ "retries_dropped": 0
+}

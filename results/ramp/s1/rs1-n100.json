@@ -1,0 +1,100 @@
+{
+ "id": "rs1-n100",
+ "sitting": "s1",
+ "lane": "rs",
+ "round": 1,
+ "n": 100,
+ "build": "~/Documents/Projects/tinycoder-experiment/builds/rs-optimize",
+ "build_what": "Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes",
+ "api": "replay",
+ "speed": 1.0,
+ "concurrency": 100,
+ "started": "2026-11-14T17:30:37-0500",
+ "outcome": "complete",
+ "ok": true,
+ "agents": {
+  "finished_done": 100,
+  "hidden_pass": 100,
+  "visible_pass": 100,
+  "statuses": {
+   "done": 100
+  },
+  "spawn_errors": {},
+  "runs_file_matches_stdout": 100
+ },
+ "time": {
+  "launch_s": 0.286,
+  "batch_wall_s": 12.47,
+  "agent_wall_ms": {
+   "median": 7447.835999999999,
+   "p95": 12014.292,
+   "max": 12248.526
+  },
+  "outside_model_ms": {
+   "median": 56.12249999999949,
+   "p95": 117.09000000000015,
+   "max": 153.82700000000023
+  }
+ },
+ "model": {
+  "calls_logged_by_agents": 367,
+  "llm_ms_total": 825220.9,
+  "replay": {
+   "requests": 367,
+   "agents": 100,
+   "in_flight": 0,
+   "max_in_flight": 100,
+   "problems": 0,
+   "served_delay_ms": 824523.5,
+   "by_status": {
+    "200": 367
+   },
+   "cpu_s": 0.506,
+   "max_rss_mb": 32.8,
+   "t_first": 1794695437.8413749,
+   "t_last": 1794695450.149338
+  },
+  "extra_wait_per_call_ms": 1.9
+ },
+ "memory": {
+  "peak_footprint_mb": 562.0,
+  "peak_resident_mb": 1617.4,
+  "per_agent_footprint_mb": 5.62,
+  "peak_processes": 302,
+  "swap_before_mb": 993.12,
+  "peak_swap_mb": 993.12,
+  "swap_growth_mb": 0.0,
+  "peak_compressed_mb": 349.0,
+  "peak_pressure": 1,
+  "sampler": "libproc"
+ },
+ "cpu": {
+  "children_cpu_s": 15.5,
+  "peak_pct": 309.0,
+  "avg_pct": 124.3
+ },
+ "mac": {
+  "macos": "26.5.2",
+  "machine": "MacBookPro17,1",
+  "chip": "Apple M1",
+  "cores": 8,
+  "ram_gb": 8.0,
+  "power": "AC",
+  "kern.maxproc": 2000,
+  "kern.maxprocperuid": 1333,
+  "kern.maxfiles": 30720,
+  "kern.maxfilesperproc": 10240,
+  "kern.ipc.somaxconn": 4096,
+  "ulimit_nofile": [
+   1048576,
+   9223372036854775807
+  ],
+  "ulimit_nproc": [
+   1333,
+   2000
+  ],
+  "processes_mine": 297,
+  "pressure": 1
+ },
+ "batch_stderr_tail": null
+}

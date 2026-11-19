@@ -1,0 +1,133 @@
+{
+ "source": "py-t2-feature-1",
+ "lane_recorded": "py",
+ "task": "t2-feature",
+ "task_text": "Add two methods to `Inventory` in `inventory.py`:\n\n1. `remove(name, qty)`: takes qty (a positive int) of an item out of stock. It raises `KeyError` if the item is not\n   in stock, and `ValueError` if qty is not a positive integer or is more than the amount in stock. When an item\n   reaches 0 it no longer appears in `items()`.\n2. `total()`: the number of units in stock across all items.\n\nAdd tests for both. Keep the existing tests passing.\n",
+ "steps": [
+  {
+   "delay_ms": 1443.8,
+   "stop_reason": "tool_use",
+   "content": [
+    {
+     "type": "tool_use",
+     "id": "toolu_01DV95GjZKEW9roKZKCtnByJ",
+     "caller": {
+      "type": "direct"
+     },
+     "name": "read_file",
+     "input": {
+      "path": "inventory.py"
+     }
+    },
+    {
+     "type": "tool_use",
+     "id": "toolu_01GNR1HgBbFjTnACHRZzZ2Sz",
+     "caller": {
+      "type": "direct"
+     },
+     "name": "list_files",
+     "input": {}
+    }
+   ],
+   "usage": {
+    "input_tokens": 1735,
+    "output_tokens": 74,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  },
+  {
+   "delay_ms": 1260.1,
+   "stop_reason": "tool_use",
+   "content": [
+    {
+     "type": "tool_use",
+     "id": "toolu_01Tq8H8WNwNZv2VeqUfMmWBb",
+     "caller": {
+      "type": "direct"
+     },
+     "name": "read_file",
+     "input": {
+      "path": "test_inventory.py"
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 2228,
+    "output_tokens": 53,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  },
+  {
+   "delay_ms": 4632.7,
+   "stop_reason": "tool_use",
+   "content": [
+    {
+     "type": "text",
+     "text": "Note bool is an int; I'll reject it in remove.",
+     "citations": []
+    },
+    {
+     "type": "tool_use",
+     "id": "toolu_01RTTFxo32xsEjxXB74wf4Ep",
+     "caller": {
+      "type": "direct"
+     },
+     "name": "edit_file",
+     "input": {
+      "path": "inventory.py",
+      "old_text": "    def count(",
+      "new_text": "    def remove(self, name, qty):\n        \"\"\"Remove qty (a positive int) of item name from stock.\"\"\"\n        if name not in self._stock:\n            raise KeyError(name)\n        if isinstance(qty, bool) or not isinstance(qty, int) or qty <= 0:\n            raise ValueError(\"qty must be a positive integer\")\n        if qty > self._stock[name]:\n            raise ValueError(\"not enough stock\")\n        self._stock[name] -= qty\n        if self._stock[name] == 0:\n            del self._stock[name]\n\n    def total(self):\n        \"\"\"Number of units in stock across all items.\"\"\"\n        return sum(self._stock.values())\n\n    def count("
+     }
+    },
+    {
+     "type": "tool_use",
+     "id": "toolu_01XgH5aANTBVE31GFP2SHcSd",
+     "caller": {
+      "type": "direct"
+     },
+     "name": "edit_file",
+     "input": {
+      "path": "test_inventory.py",
+      "old_text": "\n\nif __name__",
+      "new_text": "\n    def test_remove(self):\n        inv = Inventory()\n        inv.add(\"apple\", 3)\n        inv.remove(\"apple\", 2)\n        self.assertEqual(inv.count(\"apple\"), 1)\n        inv.remove(\"apple\", 1)\n        self.assertEqual(inv.items(), [])\n\n    def test_remove_errors(self):\n        inv = Inventory()\n        inv.add(\"apple\", 3)\n        with self.assertRaises(KeyError):\n            inv.remove(\"pear\", 1)\n        for bad in (0, -1, 1.5, \"1\", 4):\n            with self.assertRaises(ValueError):\n                inv.remove(\"apple\", bad)\n        self.assertEqual(inv.count(\"apple\"), 3)\n\n    def test_total(self):\n        inv = Inventory()\n        self.assertEqual(inv.total(), 0)\n        inv.add(\"apple\", 3)\n        inv.add(\"pear\", 2)\n        inv.remove(\"apple\", 1)\n        self.assertEqual(inv.total(), 4)\n\n\nif __name__"
+     }
+    },
+    {
+     "type": "tool_use",
+     "id": "toolu_011P8bzNgZG2pUaXxoM8Ki2j",
+     "caller": {
+      "type": "direct"
+     },
+     "name": "run_tests",
+     "input": {}
+    }
+   ],
+   "usage": {
+    "input_tokens": 2643,
+    "output_tokens": 802,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  },
+  {
+   "delay_ms": 2365.4,
+   "stop_reason": "end_turn",
+   "content": [
+    {
+     "type": "text",
+     "text": "I added `remove(name, qty)` and `total()` to `Inventory` in `inventory.py`, plus tests for both in `test_inventory.py`. All 6 tests pass, including the 3 that were already there.\n\n- **`remove`:**\n  - It raises `KeyError` if the item isn't in stock.\n  - It raises `ValueError` if `qty` isn't a positive integer or is more than the amount in stock.\n  - When an item reaches 0 it is deleted, so it no longer appears in `items()`.\n  - It also rejects `True` and `False` as quantities. `add` doesn't do that, so `add(\"apple\", True)` is still accepted.\n- **`total`:** It returns the sum of all quantities in stock, which is 0 for an empty inventory.\n\nI added three tests: one for `remove` working normally, one for its error cases, and one for `total`.",
+     "citations": []
+    }
+   ],
+   "usage": {
+    "input_tokens": 3613,
+    "output_tokens": 282,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  }
+ ],
+ "retries_dropped": 0
+}

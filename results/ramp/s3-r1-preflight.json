@@ -1,0 +1,41 @@
+{
+ "macos": "26.5.2",
+ "machine": "MacBookPro17,1",
+ "chip": "Apple M1",
+ "cores": 8,
+ "ram_gb": 8.0,
+ "power": "AC",
+ "low_power_mode": false,
+ "kern.maxproc": 2000,
+ "kern.maxprocperuid": 1333,
+ "kern.maxfiles": 30720,
+ "kern.maxfilesperproc": 10240,
+ "kern.ipc.somaxconn": 4096,
+ "kern.num_taskthreads": 2048,
+ "ulimit_nofile": [
+  1048576,
+  9223372036854775807
+ ],
+ "ulimit_nproc": [
+  1333,
+  2000
+ ],
+ "processes_all": 558,
+ "processes_mine": 292,
+ "swap_used_mb": 0.0,
+ "pressure": 1,
+ "vm": {
+  "free_mb": 135.4,
+  "active_mb": 2649.1,
+  "inactive_mb": 2608.1,
+  "wired_mb": 1458.4,
+  "compressed_mb": 749.2,
+  "swapins": 0,
+  "swapouts": 0
+ },
+ "uptime": "17:56  up 5 mins, 2 users, load averages: 7.79 20.64 11.25",
+ "top_processes": "(removed before publishing)",
+ "sampler_source": "libproc",
+ "frozen": true,
+ "refusals": []
+}

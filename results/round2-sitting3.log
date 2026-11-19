@@ -1,0 +1,132 @@
+macos                  26.5.2
+machine                MacBookPro17,1
+chip                   Apple M1
+cores                  8
+ram_gb                 8.0
+power                  AC
+low_power_mode         False
+kern.maxproc           2000
+kern.maxprocperuid     1333
+kern.maxfiles          30720
+kern.maxfilesperproc   10240
+kern.ipc.somaxconn     4096
+kern.num_taskthreads   2048
+ulimit_nofile          [1048576, 9223372036854775807]
+ulimit_nproc           [1333, 2000]
+processes_all          585
+processes_mine         305
+swap_used_mb           0.0
+pressure               1
+uptime                 12:28  up 4 mins, 3 users, load averages: 12.11 23.16 11.95
+sampler_source         libproc
+frozen                 True
+refusals               []
+top processes by CPU: (removed before publishing)
+round 1 needs 3 processes per agent (+1 while it runs tests): about 342 agents fit under kern.maxprocperuid now
+READY
+py2-n10: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 10 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 305 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 70.4 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 10 finished workspaces (not timed)...
+py2-n10: complete. 10/10 passed hidden tests. Batch 11.1 s; outside the model per agent median 75.52250000000004 ms, p95 84.9390000000003 ms. Peak memory 71 MB (7.1 MB per agent), 2 processes, swap +0 MB, pressure 1. {'done': 10}
+ts2-n10: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 10 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 304 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 61.2 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 10 finished workspaces (not timed)...
+ts2-n10: complete. 10/10 passed hidden tests. Batch 11.1 s; outside the model per agent median 62.54758350000111 ms, p95 79.33641699999862 ms. Peak memory 71 MB (7.1 MB per agent), 3 processes, swap +0 MB, pressure 1. {'done': 10}
+rs2-n10: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 10 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 307 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 7.1 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 10 finished workspaces (not timed)...
+rs2-n10: complete. 10/10 passed hidden tests. Batch 10.3 s; outside the model per agent median 71.73499999999967 ms, p95 79.71399999999994 ms. Peak memory 17 MB (1.7 MB per agent), 2 processes, swap +0 MB, pressure 1. {'done': 10}
+ts2-n25: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 25 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 308 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 64.2 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 25 finished workspaces (not timed)...
+ts2-n25: complete. 25/25 passed hidden tests. Batch 12.2 s; outside the model per agent median 54.29016700000102 ms, p95 71.96012400000018 ms. Peak memory 70 MB (2.8 MB per agent), 2 processes, swap +0 MB, pressure 1. {'done': 25}
+py2-n25: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 25 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 309 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 73.4 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 25 finished workspaces (not timed)...
+py2-n25: complete. 25/25 passed hidden tests. Batch 12.8 s; outside the model per agent median 74.14800000000014 ms, p95 90.13000000000011 ms. Peak memory 82 MB (3.3 MB per agent), 2 processes, swap +0 MB, pressure 1. {'done': 25}
+rs2-n25: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 25 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 309 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 11.7 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 25 finished workspaces (not timed)...
+rs2-n25: complete. 25/25 passed hidden tests. Batch 12.1 s; outside the model per agent median 60.47400000000016 ms, p95 78.45600000000013 ms. Peak memory 22 MB (0.9 MB per agent), 2 processes, swap +0 MB, pressure 1. {'done': 25}
+rs2-n50: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 50 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 315 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 19.7 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 50 finished workspaces (not timed)...
+rs2-n50: complete. 50/50 passed hidden tests. Batch 12.3 s; outside the model per agent median 43.19100000000026 ms, p95 73.93000000000211 ms. Peak memory 28 MB (0.6 MB per agent), 2 processes, swap +0 MB, pressure 1. {'done': 50}
+ts2-n50: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 50 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 315 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 69.7 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 50 finished workspaces (not timed)...
+ts2-n50: complete. 50/50 passed hidden tests. Batch 12.6 s; outside the model per agent median 43.55270799999971 ms, p95 72.50683500000105 ms. Peak memory 78 MB (1.6 MB per agent), 2 processes, swap +0 MB, pressure 1. {'done': 50}
+py2-n50: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 50 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 315 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 87.8 MB, 2 processes, swap 0.0 MB, pressure 1
+checking 50 finished workspaces (not timed)...
+py2-n50: complete. 50/50 passed hidden tests. Batch 12.9 s; outside the model per agent median 72.02750000000015 ms, p95 101.30299999999988 ms. Peak memory 88 MB (1.8 MB per agent), 3 processes, swap +0 MB, pressure 1. {'done': 50}
+ts2-n100: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 100 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 315 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 77.9 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 100 finished workspaces (not timed)...
+ts2-n100: complete. 100/100 passed hidden tests. Batch 12.6 s; outside the model per agent median 39.84995849999996 ms, p95 70.81875099999888 ms. Peak memory 92 MB (0.9 MB per agent), 3 processes, swap +0 MB, pressure 1. {'done': 100}
+rs2-n100: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 100 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 317 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 35.3 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 100 finished workspaces (not timed)...
+rs2-n100: complete. 100/100 passed hidden tests. Batch 12.3 s; outside the model per agent median 55.743500000000495 ms, p95 91.05299999999897 ms. Peak memory 51 MB (0.5 MB per agent), 3 processes, swap +0 MB, pressure 1. {'done': 100}
+py2-n100: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 100 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 322 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 100.1 MB, 3 processes, swap 0.0 MB, pressure 1
+checking 100 finished workspaces (not timed)...
+py2-n100: complete. 100/100 passed hidden tests. Batch 13.1 s; outside the model per agent median 95.15299999999979 ms, p95 123.30199999999968 ms. Peak memory 133 MB (1.3 MB per agent), 6 processes, swap +0 MB, pressure 1. {'done': 100}
+rs2-n250: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 250 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 321 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 82.4 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 250 finished workspaces (not timed)...
+rs2-n250: complete. 250/250 passed hidden tests. Batch 12.4 s; outside the model per agent median 77.88250000000016 ms, p95 120.33699999999953 ms. Peak memory 154 MB (0.6 MB per agent), 9 processes, swap +0 MB, pressure 1. {'done': 250}
+py2-n250: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 250 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 321 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 114.0 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 250 finished workspaces (not timed)...
+py2-n250: complete. 250/250 passed hidden tests. Batch 13.1 s; outside the model per agent median 196.97949999999946 ms, p95 239.91499999999996 ms. Peak memory 157 MB (0.6 MB per agent), 8 processes, swap +0 MB, pressure 1. {'done': 250}
+ts2-n250: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 250 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 321 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 116.2 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 250 finished workspaces (not timed)...
+ts2-n250: complete. 250/250 passed hidden tests. Batch 13.3 s; outside the model per agent median 48.754249999999956 ms, p95 89.50996000000032 ms. Peak memory 167 MB (0.7 MB per agent), 9 processes, swap +0 MB, pressure 1. {'done': 250}
+rs2-n500: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 500 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 321 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 163.2 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 500 finished workspaces (not timed)...
+rs2-n500: complete. 500/500 passed hidden tests. Batch 12.3 s; outside the model per agent median 239.6869999999999 ms, p95 658.0630000000001 ms. Peak memory 240 MB (0.5 MB per agent), 9 processes, swap +0 MB, pressure 1. {'done': 500}
+ts2-n500: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 500 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 320 processes of mine.
+launched in 0.00 s; 0 spawn errors
+     10 s: 1 running, footprint 193.0 MB, 3 processes, swap 0.0 MB, pressure 1
+checking 500 finished workspaces (not timed)...
+ts2-n500: complete. 500/500 passed hidden tests. Batch 12.7 s; outside the model per agent median 212.47550049999882 ms, p95 684.4603749999997 ms. Peak memory 227 MB (0.5 MB per agent), 9 processes, swap +0 MB, pressure 1. {'done': 500}
+py2-n500: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 500 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 320 processes of mine.
+launched in 0.01 s; 0 spawn errors
+     10 s: 1 running, footprint 157.9 MB, 1 processes, swap 0.0 MB, pressure 1
+checking 500 finished workspaces (not timed)...
+py2-n500: complete. 500/500 passed hidden tests. Batch 13.4 s; outside the model per agent median 573.8875000000003 ms, p95 1035.8300000000008 ms. Peak memory 213 MB (0.4 MB per agent), 9 processes, swap +0 MB, pressure 1. {'done': 500}
+ts2-n1000: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 1000 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 320 processes of mine.
+launched in 0.01 s; 0 spawn errors
+     10 s: 1 running, footprint 357.0 MB, 7 processes, swap 0.0 MB, pressure 1
+checking 1000 finished workspaces (not timed)...
+ts2-n1000: complete. 1000/1000 passed hidden tests. Batch 15.3 s; outside the model per agent median 2385.9183964999993 ms, p95 3395.3312920000008 ms. Peak memory 384 MB (0.4 MB per agent), 9 processes, swap +0 MB, pressure 1. {'done': 1000}
+rs2-n1000: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 1000 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 340 processes of mine.
+launched in 0.01 s; 0 spawn errors
+     10 s: 1 running, footprint 352.8 MB, 9 processes, swap 0.0 MB, pressure 1
+checking 1000 finished workspaces (not timed)...
+rs2-n1000: complete. 1000/1000 passed hidden tests. Batch 14.8 s; outside the model per agent median 2255.7985 ms, p95 3179.798999999999 ms. Peak memory 398 MB (0.4 MB per agent), 9 processes, swap +0 MB, pressure 1. {'done': 1000}
+py2-n1000: Round 2 scale build (SPEC-SCALE.md): one program runs every agent, 1000 agents, replay model at speed 1.0. Swap 0.0 MB, pressure 1, 324 processes of mine.
+launched in 0.01 s; 0 spawn errors
+     10 s: 1 running, footprint 306.8 MB, 9 processes, swap 0.0 MB, pressure 1
+checking 1000 finished workspaces (not timed)...
+py2-n1000: complete. 1000/1000 passed hidden tests. Batch 17.6 s; outside the model per agent median 3590.0110000000004 ms, p95 4605.455 ms. Peak memory 307 MB (0.3 MB per agent), 9 processes, swap +0 MB, pressure 1. {'done': 1000}
+SITTING s3 ROUND 2 FINISHED Thu Nov 19 12:42:22 2026; walls: none

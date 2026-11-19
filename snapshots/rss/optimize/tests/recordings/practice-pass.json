@@ -1,0 +1,42 @@
+{
+ "source": "practice-pass-scripted",
+ "task": "practice-pass",
+ "task_text": "Practice task. The tests already pass. Run them and reply with one sentence.\n",
+ "note": "Scripted for the visible checks (not a real model run). Delays are typical Sonnet 5.5 step times from Experiment 4.",
+ "steps": [
+  {
+   "delay_ms": 1200,
+   "stop_reason": "tool_use",
+   "content": [
+    {
+     "type": "tool_use",
+     "id": "x",
+     "name": "run_tests",
+     "input": {}
+    }
+   ],
+   "usage": {
+    "input_tokens": 1700,
+    "output_tokens": 40,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  },
+  {
+   "delay_ms": 900,
+   "stop_reason": "end_turn",
+   "content": [
+    {
+     "type": "text",
+     "text": "The tests already pass."
+    }
+   ],
+   "usage": {
+    "input_tokens": 1700,
+    "output_tokens": 20,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0
+   }
+  }
+ ]
+}

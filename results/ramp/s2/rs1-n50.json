@@ -1,0 +1,100 @@
+{
+ "id": "rs1-n50",
+ "sitting": "s2",
+ "lane": "rs",
+ "round": 1,
+ "n": 50,
+ "build": "~/Documents/Projects/tinycoder-experiment/builds/rs-optimize",
+ "build_what": "Experiment 4 optimize build, unchanged: one process per agent + 2 MCP server processes",
+ "api": "replay",
+ "speed": 1.0,
+ "concurrency": 50,
+ "started": "2026-11-14T17:44:07-0500",
+ "outcome": "complete",
+ "ok": true,
+ "agents": {
+  "finished_done": 50,
+  "hidden_pass": 50,
+  "visible_pass": 50,
+  "statuses": {
+   "done": 50
+  },
+  "spawn_errors": {},
+  "runs_file_matches_stdout": 50
+ },
+ "time": {
+  "launch_s": 0.13,
+  "batch_wall_s": 12.37,
+  "agent_wall_ms": {
+   "median": 7471.5635,
+   "p95": 12039.499,
+   "max": 12221.316
+  },
+  "outside_model_ms": {
+   "median": 57.821500000000015,
+   "p95": 88.05599999999959,
+   "max": 101.20000000000073
+  }
+ },
+ "model": {
+  "calls_logged_by_agents": 184,
+  "llm_ms_total": 414492.5,
+  "replay": {
+   "requests": 184,
+   "agents": 50,
+   "in_flight": 0,
+   "max_in_flight": 50,
+   "problems": 0,
+   "served_delay_ms": 413944.2,
+   "by_status": {
+    "200": 184
+   },
+   "cpu_s": 0.414,
+   "max_rss_mb": 30.1,
+   "t_first": 1794696247.688009,
+   "t_last": 1794696259.946687
+  },
+  "extra_wait_per_call_ms": 2.98
+ },
+ "memory": {
+  "peak_footprint_mb": 285.2,
+  "peak_resident_mb": 816.1,
+  "per_agent_footprint_mb": 5.7,
+  "peak_processes": 151,
+  "swap_before_mb": 629.75,
+  "peak_swap_mb": 629.75,
+  "swap_growth_mb": 0.0,
+  "peak_compressed_mb": 674.2,
+  "peak_pressure": 1,
+  "sampler": "libproc"
+ },
+ "cpu": {
+  "children_cpu_s": 8.28,
+  "peak_pct": 152.5,
+  "avg_pct": 67.0
+ },
+ "mac": {
+  "macos": "26.5.2",
+  "machine": "MacBookPro17,1",
+  "chip": "Apple M1",
+  "cores": 8,
+  "ram_gb": 8.0,
+  "power": "AC",
+  "kern.maxproc": 2000,
+  "kern.maxprocperuid": 1333,
+  "kern.maxfiles": 30720,
+  "kern.maxfilesperproc": 10240,
+  "kern.ipc.somaxconn": 4096,
+  "ulimit_nofile": [
+   1048576,
+   9223372036854775807
+  ],
+  "ulimit_nproc": [
+   1333,
+   2000
+  ],
+  "processes_mine": 325,
+  "pressure": 1
+ },
+ "batch_stderr_tail": null
+}
